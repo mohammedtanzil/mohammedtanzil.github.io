@@ -487,4 +487,12 @@ bottom: 100%;
 }.loading.block{
     display: flex !important;
 }
-
+/*emailsendingmsg*/
+.emailSendingMsg {
+    position: fixed;
+    top: 45%;
+    left: 10%;
+    right: 10%;
+    background: #00ff90;
+    border-radius: 20px;
+}

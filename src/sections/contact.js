@@ -126,12 +126,13 @@ const submitFormcon =()=>{
         msg:msg
     }
    
-        axios.post("http://127.0.0.1:8000/api/sendmail",mailInfo)
+        axios.post("https://mohammedtanzil.herokuapp.com/api/sendmail",mailInfo)
         .then ((res)=>{
           document.querySelector('.loading').classList.remove('block');
           document.querySelector('.loading').classList.add('none');
           navigate('/');
-          setmymsg('hello');
+          localStorage.setItem("msg", "Thanks for your message very soon im contact with you");
+          window.location.reload(false);
             console.log(res.data);
            
         })

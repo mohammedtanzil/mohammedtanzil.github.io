@@ -29,7 +29,7 @@ function Home() {
                 <div className='gard1'><div className='gard2'> <div className='picture'><img src={ProfileImage} /></div></div></div>
             </div>
             <div className="profileName">Mohammed Tanzil</div>
-            <div className="profileStatus">Last online 1 min ago</div>
+            <div className="profileStatus">Last online 0 min ago</div>
             <Link to='/contact'><button className='quickcontactBtn' >Quick Contact</button></Link>
         </div>
        </section>

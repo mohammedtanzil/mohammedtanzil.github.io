@@ -126,7 +126,7 @@ const submitFormcon =()=>{
         msg:msg
     }
    
-        axios.post("https://mohammedtanzil.herokuapp.com/api/sendmail",mailInfo)
+        axios.post("https://mohammedtanzil.herokuapp.com/api/sendmail",mailInfo,{headers:{"Content-Type" : "application/json"}})
         .then ((res)=>{
           document.querySelector('.loading').classList.remove('block');
           document.querySelector('.loading').classList.add('none');
@@ -135,6 +135,8 @@ const submitFormcon =()=>{
           window.location.reload(false);
             console.log(res.data);
            
+        }).catch(error => {
+          console.log(error.message);
         })
 
 }

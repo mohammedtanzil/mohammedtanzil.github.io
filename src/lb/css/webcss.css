@@ -496,3 +496,61 @@ bottom: 100%;
     background: #00ff90;
     border-radius: 20px;
 }
+
+@media  (max-width: 1000px) {
+    header#mainHeader {
+        height: 40px;
+        bottom: 1%;
+        top: unset;
+        left: 10%;
+        right: 10%;
+        position: fixed;
+        width: unset;
+    }
+    header#mainHeader:hover nav ul {
+        display: flex;
+        padding-left: 0;
+    }
+    
+    header#mainHeader nav ul li label {
+        position: absolute;
+        top: -30px;
+    }
+    .navAcivation{
+width: 100%;
+height: 17px;
+border-radius: 10px;
+    }
+    header#mainHeader:hover .navAcivation{
+        width: 0;
+    }
+    section#home .HomeProfile {
+        position: absolute;
+        width: 100%;
+        top: 4%;
+        text-align: center;
+        color: white;
+        right: 0;
+    }
+    section#home .homeMsg {
+        position: absolute;
+        bottom: 4%;
+        left: 0;
+        color: white;
+        width: 100%;
+        display: grid;
+        grid-row-gap: 30px;
+        padding: 20PX;
+    }
+    section#home .homeMsg h1{
+        font-size: 2.2rem;
+    }
+    section#home .homeMsg ul{
+        height: 50px;
+    }
+    @keyframes slidertext {
+        100%{
+            top: -155px;
+        }
+    }
+  }
